@@ -1,0 +1,33 @@
+{
+  "name": "ez-map",
+  "version": "1.0.0",
+  "description": "A basic Map-like implementation.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/ez-map.git"
+  },
+  "keywords": [
+    "map",
+    "array"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/ez-map/issues"
+  },
+  "homepage": "https://github.com/gummesson/ez-map",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "covert": "^1.0.1",
+    "smokestack": "^3.2.1",
+    "tap-closer": "^1.0.0",
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:cover": "covert test/"
+  }
+}
