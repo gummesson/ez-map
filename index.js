@@ -1,14 +1,42 @@
 /**
+ * Dependencies
+ */
+
+var isArray = Array.isArray
+
+/**
  * Initialize `EzMap`.
  *
  * @constructor
+ * @param {array} arr
  *
  * @api public
  */
 
-function EzMap() {
+function EzMap(arr) {
   this._keys   = []
   this._values = []
+  if (isArray(arr) && arr.length)
+    this._initial(arr)
+}
+
+/**
+ * Set initial entries.
+ *
+ * @param  {array} arr
+ * @return {void}
+ *
+ * @api private
+ */
+
+EzMap.prototype._initial = function(arr) {
+  var self = this
+  arr.forEach(function(entry) {
+    var key   = entry[0]
+    var value = entry[1]
+    self._keys.push(key)
+    self._values.push(value)
+  })
 }
 
 /**

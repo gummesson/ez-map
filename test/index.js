@@ -10,10 +10,12 @@ var EzMap = require('../')
  */
 
 test('EzMap()', function(t) {
-  var map = new EzMap()
+  var map = new EzMap([
+    ['foo', 'bar']
+  ])
 
   t.test('.set(key[, val])', function(assert) {
-    map.set('foo', 'bar').set('baz')
+    map.set('baz')
     assert.deepEqual(map._keys, ['foo', 'baz'])
     assert.deepEqual(map._values, ['bar', undefined])
     assert.end()
