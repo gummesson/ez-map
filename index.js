@@ -8,7 +8,7 @@ var isArray = Array.isArray
  * Initialize `EzMap`.
  *
  * @constructor
- * @param {array} arr
+ * @param {array} [arr]
  *
  * @api public
  */
@@ -56,7 +56,7 @@ EzMap.prototype._index = function(key) {
  * Set an entry.
  *
  * @param  {mixed} key
- * @param  {mixed} value
+ * @param  {mixed} [value]
  * @return {this}
  *
  * @api public
