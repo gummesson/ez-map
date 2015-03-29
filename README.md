@@ -16,11 +16,11 @@ npm install ez-map
 
 ``` javascript
 var EzMap = require('ez-map')
-var map   = new EzMap()
+var map   = new EzMap([
+  ['foo', 'bar']
+])
 
-map.set('foo', 'bar')
 map.set('baz')
-
 map.has('foo') // => true
 map.get('baz') // => undefined
 
@@ -42,7 +42,6 @@ map.clear()
 
 ## Differences
 
-- `new Map()` can't take an array with initial entries.
 - `.entries()` is the only way to get the entries.
 - `.size()` (instead of `.size`) to get the size of the entries.
 - `.forEach()` has no parameter for passing the context.
