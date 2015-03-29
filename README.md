@@ -49,6 +49,7 @@ map.clear()
 ## See also
 
 - [arrays-to-object](https://github.com/gummesson/arrays-to-object)
+- [object-to-arrays](https://github.com/gummesson/object-to-arrays)
 
 [npm-img]: https://img.shields.io/npm/v/ez-map.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/ez-map
